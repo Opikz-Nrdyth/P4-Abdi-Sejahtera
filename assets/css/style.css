@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #000;
+}
+
+#company-name-1 {
+  font-size: 20px;
+}
+
+#company-name-2 {
+  font-size: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu select {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-right: 20px;
+  width: 120px;
+}
+
+.first-selected {
+  display: none;
+}
+
+.menu i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
